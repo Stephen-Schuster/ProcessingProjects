@@ -1,0 +1,88 @@
+void dorBlocks() {
+  if(switched[0]) {
+    fill(0,0,0,0);
+    strokeWeight(height/100);
+    stroke(255,0,0);
+  } else {
+    fill(255,0,0);
+    noStroke();
+  }
+    for(int x = 0; x<rBlocks[lvl].length; x++) {
+      for(int y = 0; y<rBlocks[lvl][0].length; y++) {
+        if(rBlocks[lvl][x][y])rect(x*width/35+sideMargins,y*height/20,height/20+2,height/20+1);
+      }
+    }
+}
+boolean[][][] rBlocks = {{
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {t,t,t,t,t,t,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,t,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f}
+},{
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f},
+  {f,f,f,f,f,f,f,f,f}
+}};
