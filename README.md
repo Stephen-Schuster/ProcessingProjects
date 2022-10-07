@@ -14,7 +14,7 @@
 ### [The Julia Set](https://en.wikipedia.org/wiki/Julia_set) is a set of fractals. This program visualizes the set, taking the user's mouse position as input
 
 ## Projectile Physics Demonstration
-![physics](gifs/physics.gif)
+![physics](gifs/physicsDemo_Trim.gif)
 
 ### This program demonstrates the movement of a projectile with airdrag and wind. Many of the factors can be edited to change the outcome.
 
